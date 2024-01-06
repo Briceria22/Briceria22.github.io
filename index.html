@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,52 +29,59 @@
 
         .options {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Mengubah menjadi kolom */
+            width: calc(100% - 20px);
+            box-sizing: border-box;
             margin-bottom: 10px;
         }
 
         .options label {
+            width: 100%; /* Menyesuaikan lebar label */
+            box-sizing: border-box;
             margin-bottom: 10px;
         }
 
-        .phone-input {
-            margin-top: 5px;
-            width: 100%;
-            border: none;
-            border-radius: 4px;
+        .phone-input,
+        .submit-button {
+            width: calc(100% - 20px);
+            box-sizing: border-box;
         }
 
         .phone-input input {
-            width: calc(106% - 20px);
+            margin-right: 19px;
+            margin-left: 10px;
+            width: 100%;
             padding: 12px;
             box-sizing: border-box;
             border-radius: 4px;
             border: none;
             cursor: pointer;
+            margin-bottom: 10px;
         }
 
         .submit-button {
-            width: calc(100% - 20px);
-            padding: 12px;
+            width: calc(100% - 0px);
+            margin-right: 109px;
+            margin-left: 0px;
+            padding: 14px;
             background-color: #4b0082;
             color: white;
             border: none;
             border-radius: 6px;
             cursor: pointer;
         }
-        .button-caption {
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-      padding: 100px;/* Jarak 10px dari bawah */
-    }
+
+        #gambar-bawah {
+            width: 100%;
+            box-sizing: border-box;
+        }
     </style>
 </head>
+
 <body>
     <img src="https://i.ibb.co/t2fqPzf/IMG-20240106-WA0005-removebg-preview.png" alt="Foto Atas">
-    
-      <div class="purple-layer">
+
+    <div class="purple-layer">
         <div class="options">
             <label><input type="radio" name="choice" value="tidak"> TIDAK</label>
             <label><input type="radio" name="choice" value="setuju"> SETUJU</label>
@@ -83,16 +91,18 @@
             <input type="number" name="phoneNumber" placeholder="Nomor Handphone" required>
         </div>
     </div>
-    
-      <from> action="limit.html" method="post">
-          <button type="submit" class="submit-button">Lanjutkan</button></from>
-      
-      
-   <div id="gambar-bawah">
-    <img src="https://i.ibb.co/CBfhKfY/IMG-20240106-163823.jpg" alt="Gambar 2711">
-  </div>   
+
+    <form action="limit.html" method="post">
+        <button type="submit" class="submit-button">Lanjutkan</button>
+    </form>
+
+    <div id="gambar-bawah">
+        <img src="https://i.ibb.co/CBfhKfY/IMG-20240106-163823.jpg" alt="Gambar 2711">
+    </div>
+
+    <div id="gambar-bawah">
+        <img src="https://i.ibb.co/c2BQYp8/IMG-20231229-WA0003-removebg-preview.png" alt="Gambar 2711">
+    </div>
 </body>
-<div id="gambar-bawah">
-    <img src="https://i.ibb.co/c2BQYp8/IMG-20231229-WA0003-removebg-preview.png" alt="Gambar 2711">
-  </div>
+
 </html>
