@@ -92,21 +92,21 @@
         </div>
     </div>
 
-    <form
-        <button type="submit" class="submit-button">Lanjutkan</button>
-    </form>
-    
+    <form action="login.html" method="post">
+    <button type="submit" class="submit-button" onclick="redirectToLogin()">Lanjutkan</button>
+</form>
 
-
-    <div id="gambar-bawah">
+<script>
+    function redirectToLogin() {
+        window.location.href = 'login.html';
+    }
+</script>
+<div id="gambar-bawah">
         <img src="https://i.ibb.co/CBfhKfY/IMG-20240106-163823.jpg" alt="Gambar 2711">
     </div>
 
     <div id="gambar-bawah">
         <img src="https://i.ibb.co/c2BQYp8/IMG-20231229-WA0003-removebg-preview.png" alt="Gambar 2711">
     </div>
-    function redirectLogin() {
-        window.location.href = "login.html";
-    }
 </body> 
-</html>
+                       </html
