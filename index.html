@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,8 +60,8 @@
         }
 
         .submit-button {
-            width: calc(100% - 0px);
-            margin-right: 109px;
+            width: calc(100% - 20px);
+            margin-right: 0px;
             margin-left: 0px;
             padding: 14px;
             background-color: #4b0082;
@@ -91,21 +92,20 @@
         </div>
     </div>
 
-    <form action="login.html" method="post">
-    <button type="submit" class="submit-button" onclick="redirectToLogin()">Lanjutkan</button>
-</form>
+    <button type="button" class="submit-button">Lanjutkan</button>
 
-<script>
-    function redirectToLogin() {
-        window.location.href = 'login.html';
-    }
-</script>
-<div id="gambar-bawah">
+    <div id="gambar-bawah">
         <img src="https://i.ibb.co/CBfhKfY/IMG-20240106-163823.jpg" alt="Gambar 2711">
     </div>
 
     <div id="gambar-bawah">
         <img src="https://i.ibb.co/c2BQYp8/IMG-20231229-WA0003-removebg-preview.png" alt="Gambar 2711">
     </div>
+
+    <script>
+        document.querySelector('.submit-button').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
 </body> 
 </html>
